@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #5a7233;
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+form {
+    position: relative;
+    width: 80%;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.form-inner {
+    padding: 40px;
+}
+
+.form-control,
+textarea{
+    margin-top: 1%;
+    
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #d0dfe8;
+}
+
+#fila,#columna{
+    margin-top: 1%;
+    display: inline-flexbox;
+    width: 49%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #d0dfe8;  
+
+}
+
+.control{
+    margin-top: 1%;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.label-control {
+    display: flex;
+    padding-left: 1%;
+    font-weight: 500;
+    margin-top: 1%;
+}
+
+.form-inner textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid #3e4f24;
+    background: #5a7233;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#botonEspecie{
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid #040505;
+    background: #c9c9c9;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+button:hover {
+    background: #3e4f24;
+}
+
+@media (min-width: 568px) {
+    form {
+        width: 60%;
+    }
+}

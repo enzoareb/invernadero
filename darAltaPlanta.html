@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Agregar Planta</title>
+    <link rel="stylesheet" href="./css/planta.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="js/plantas.js" type="text/javascript"></script>
+    <script src="js/empleados.js" type="text/javascript"></script>
+    <script src="js/especies.js" type="text/javascript"></script>
+
+    <script src="js/funciones.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <form>
+      <div class="form-inner">
+        <h1>Agregar Planta</h1>
+
+        <label class="label-control">Nombre Planta</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nombrePlanta"
+          placeholder="ingrese nombre de la planta..."
+        />
+
+        <label class="label-control">Codigo</label>
+        <input
+          readonly="readonly"
+          type="text"
+          id="numero"
+          class="form-control"
+        />
+
+        <label class="label-control">Especie</label>
+        <select class="form-control" id="especies" name="especies">
+          <option value="">Seleccione una especie...</option>
+        </select>
+
+        <label class="label-control">
+          <a href="darAltaEspecie.html">
+            <button type="button" id="botonEspecie" class="btn btn-primary">
+              Agregar Nueva Especie
+            </button>
+          </a>
+        </label>
+
+        <label class="label-control">Ubicacion</label>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            id="fila"
+            placeholder="Fila"
+          />
+          <input
+            type="text"
+            class="form-control"
+            id="columna"
+            placeholder="Columna"
+          />
+        </div>
+
+        <label class="label-control">Cuidados Necesarios</label>
+        <textarea
+          class="textarea"
+          rows="3"
+          id="cuidados"
+          placeholder="Ingrese los cuidados necesarios de la planta..."
+        ></textarea>
+
+        
+
+        <label class="label-control">Agregar Foto</label>
+        <input type="file" class="control" />
+
+        <label class="label-control">Estado</label>
+        <div class="control">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio1"
+            checked
+          />
+          <label class="form-check-label" for="inlineRadio1">No lista para venta</label>
+
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option2"
+          />
+          <label class="form-check-label" for="inlineRadio2">En venta</label>
+
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio3"
+            value="option3"
+          />
+          <label class="form-check-label" for="inlineRadio3">En experimento</label>
+        </div>
+
+        <button type="button" id="agregar" class="btn btn-primary">
+          Agregar Planta
+        </button>
+      </div>
+    </form>
+
+    <script src="js/darAltaPlanta.js" type="text/javascript"></script>
+  </body>
+</html>

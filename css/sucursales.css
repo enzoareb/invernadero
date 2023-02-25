@@ -1,0 +1,21 @@
+/* #right {
+  position: absolute;
+
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  width: 25%;
+}*/ 
+
+#mapid {
+  background: #ccc;
+  position: fixed;
+  height: 60%;
+  width: 57%;
+  /*margin-right: 5px;*/
+}
+
+#states {
+  margin: 7px 15px;
+}
